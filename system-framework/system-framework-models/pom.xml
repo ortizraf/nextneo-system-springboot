@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.nextneo.system.framework</groupId>
+		<artifactId>system-framework</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>system-framework-models</artifactId>
+	<name>System Framework - Models</name>
+	<description>System Framework - Models</description>
+
+	<dependencies>
+
+		<!-- SYSTEM FRAMEWORK UTILS -->
+		<dependency>
+			<groupId>com.nextneo.system.framework</groupId>
+			<artifactId>system-framework-utils</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- HIBERNATE CORE -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.4.1.Final</version>
+		</dependency>
+
+		<!-- JAVAX TRANSACTION API -->
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>javax.transaction-api</artifactId>
+			<version>1.3</version>
+		</dependency>
+
+		<!-- HIBERNATE VALIDATOR -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>6.0.15.Final</version>
+		</dependency>
+
+		<!-- MYSQL CONNECTOR -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.15</version>
+		</dependency>
+
+
+	</dependencies>
+</project>
