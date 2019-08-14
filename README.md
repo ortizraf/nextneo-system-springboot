@@ -1,7 +1,7 @@
 # Nextneo System Project
 Nextneo System Project
 
-Java project with project with SpringBoot 2.x
+Java project with project with SpringBoot 2.x, Swagger
 
 ## Requirements
 
