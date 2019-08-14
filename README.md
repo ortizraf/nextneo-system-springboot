@@ -6,10 +6,14 @@ Java project with project with SpringBoot 2.x, Swagger
 ## Requirements
 
 - JDK 11
-- MySQL 8
-- Embedded Tomcat 9
+- MariaDB 10
+    or
+- Docker
 
 ## Info
+
+Swagger: `/system/swagger-ui.html`
+
 
 ### Web
 
