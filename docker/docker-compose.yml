@@ -52,7 +52,24 @@ services:
       - '3306'
     volumes:
       - db-volume:/var/lib/mysql
+
+  redis:
+    image: redis
+    container_name: redis
+    command: redis-server --requirepass Redis2019!
+    networks:
+      - network-app
+    ports:
+      - '6379:6379'
+    restart: always
+    volumes:
+      - redis-data:/data
+    depends_on:
+      - app
+
+
 networks:
   network-app:
 volumes:
   db-volume:
+  redis-data:
