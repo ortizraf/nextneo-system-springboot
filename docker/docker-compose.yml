@@ -53,7 +53,7 @@ services:
     volumes:
       - db-volume:/var/lib/mysql
 
-  redis:
+  cache:
     image: redis
     container_name: redis
     command: redis-server --requirepass Redis2019!
