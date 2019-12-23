@@ -26,6 +26,21 @@
 			<artifactId>system-framework-integration</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		
+		<!-- redis - cache -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-data-redis</artifactId>
+		    <version>${spring.version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>it.ozimov</groupId>
+		    <artifactId>embedded-redis</artifactId>
+		    <version>0.7.2</version>
+		    <scope>test</scope>
+		</dependency>
+		
 
 	</dependencies>
 

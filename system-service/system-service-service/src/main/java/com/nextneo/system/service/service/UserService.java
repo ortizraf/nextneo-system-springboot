@@ -5,6 +5,7 @@ import java.util.Set;
 import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -52,6 +53,7 @@ public class UserService {
 	}
 
 	@Transactional(propagation = Propagation.REQUIRED)
+	@Cacheable(cacheNames = "User", key="#id")
 	public User findById(long id) throws BusinessException, Exception {
 		LOGGER.info(" findById ");
 
@@ -74,6 +76,7 @@ public class UserService {
 	}
 
 	@Transactional(propagation = Propagation.REQUIRED)
+	@Cacheable(cacheNames = "User", key="#login")
 	public User findByLogin(String login) throws BusinessException, Exception {
 		LOGGER.info("findByUsername");
 

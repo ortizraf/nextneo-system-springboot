@@ -1,5 +1,7 @@
 package com.nextneo.system.framework.models.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,8 +12,10 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "user", uniqueConstraints = @UniqueConstraint(columnNames = "login"))
-public class User{
+public class User implements Serializable {
 	
+	private static final long serialVersionUID = -2963760574692497054L;
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
